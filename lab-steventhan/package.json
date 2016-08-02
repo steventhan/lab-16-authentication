@@ -1,0 +1,34 @@
+{
+  "name": "lab-steventhan",
+  "version": "1.0.0",
+  "description": "",
+  "main": "_server.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "bcrypt": "latest",
+    "bluebird": "^3.4.1",
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "http-errors": "^1.5.0",
+    "jsonwebtoken": "^7.1.7",
+    "mongoose": "^4.5.8"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "debug": "^2.2.0",
+    "gulp": "^3.9.1",
+    "gulp-eslint": "^3.0.1",
+    "gulp-mocha": "^2.2.0",
+    "gulp-nodemon": "^2.1.0",
+    "mocha": "^3.0.0"
+  },
+  "scripts": {
+    "test": "mocha",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
