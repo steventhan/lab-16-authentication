@@ -21,7 +21,7 @@ authRouter.post('/signup', jsonParser, (req, res, next) => {
         });
     })
     .catch((err) => {
-      next(createError(401, 'Unable to authenticate'));
+      next(err);
     });
 });
 

@@ -11,6 +11,9 @@ server.use('/api', require('./routes/auth_router'));
 
 server.use((err, req, res, next) => {
   serverLog(err);
+  if(err.status && err.name) {
+    res.status(err.status).send(err.name);
+  }
   next(err);
 });
 
